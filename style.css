@@ -64,6 +64,13 @@ img {
     border-radius: 10px;
 }
 
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
 a {
     color: #337ab7;
     text-decoration: none;
