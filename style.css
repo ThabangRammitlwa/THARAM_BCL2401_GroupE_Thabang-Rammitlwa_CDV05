@@ -468,18 +468,7 @@ img {
     display: flex;
     align-items: center;
     margin-bottom: var(--mb-2-5);
-    cursor: pointer;
-}
-
-.skills__icon, .skills__arrow {
-    font-size: 2rem;
-    color: var(--first-color);
-
-}
-
-.skills__icon {
-    margin-right: var(--mb-0-75);
-
+    
 }
 
 .skills__title {
@@ -492,11 +481,6 @@ img {
 
 }
 
-.skills__arrow {
-    margin-left: auto;
-    transition: .4s;
-
-}
 
 .skills__list {
     row-gap: 1.5rem;
@@ -534,22 +518,7 @@ img {
     width: 100%;
 }
 
-.skills__close .skills__list {
 
-    height: 0;
-    overflow: hidden;
-
-}
-
-.skills__open .skills__list {
-    height: max-content;
-    margin-bottom: var(--mb-2-5);
-
-}
-
-.skills__open .skills__arrow {
-    transform: rotate(-180deg);
-}
 /*==================== QUALIFICATION ====================*/
 .qualification__tabs {
     display: flex;
@@ -592,7 +561,7 @@ img {
 .qualification__calendar {
     font-size: var(--smaller-font-size);
     color: var(--text-color-light);
-    /* margin-bottom: var(--mb-1) */
+
 
 }
 
@@ -993,15 +962,15 @@ img {
         gap: .5rem;
     }
 
-    .services__container {
+    .technologies__container {
         grid-template-columns: max-content;
         justify-content: center;
     }
 
-    .services__content {
+    .technologies__content {
         padding-right: 3.5rem;
     }
-    .services__modal {
+    .technologies__modal {
         padding: 0 .5rem;
     }
 
@@ -1009,22 +978,9 @@ img {
         width: 200px;
     }
 
-    .testimonial__header,
-    .testimonial__data {
-        flex-direction: column;
-        align-items: center;
+   
     }
 
-    .testimonial__img {
-        margin-right: 0;
-        margin-bottom: var(--mb-0-25);
-    }
-
-    .testimonial__data,
-    .testimonial__description {
-        text-align: center;
-    }
-}
 
 /* For medium devices */
 @media screen and (min-width: 568px) {
@@ -1145,24 +1101,24 @@ img {
         .qualification__sections {
             grid-template-columns: .5fr
         }
-        .services__container {
+        .technologies__container {
             grid-template-columns: repeat(3, 218px);
             justify-content: center;
         }
-        .services__icon {
+        .technologies__icon {
             font-size: 2rem;
         }
-        .services__content {
+        .technologies__content {
             padding: 6rem 0 2rem 2.5rem;
         }
 
-        .services__modal-content {
+        .technologies__modal-content {
             width: 450px;
         }
-        .portfolio__img {
+        .projects__img {
             width: 320px;
         }
-        .portfolio__content {
+        .projects__content {
             align-items: center;
         }
         .project {

@@ -1,8 +1,20 @@
-// Add event listener to navigation links
-document.querySelectorAll('nav a').forEach(link => {
-    link.addEventListener('click', event => {
-        event.preventDefault();
-        const target = event.target.getAttribute('href');
-        document.querySelector(target).scrollIntoView({ behavior: 'mooth' });
-    });
-});
+/*==================== MENU SHOW Y HIDDEN ====================*/
+const navMenu = document.getElementById('nav-menu'),
+      navToggle = document.getElementById('nav-toggle'),
+      navClose = document.getElementById('nav-close')
+
+/*===== MENU SHOW =====*/
+/* Validate if constant exists */
+if(navToggle) {
+  navToggle.addEventListener('click', () => {
+    navMenu.classList.add('show-menu')
+  })
+}
+
+/*===== MENU HIDDEN =====*/
+/* Validate if constant exists */
+if(navClose) {
+  navClose.addEventListener('click', () => {
+    navMenu.classList.remove('show-menu')
+  })
+}
